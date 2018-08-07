@@ -22,6 +22,12 @@ In the `scripts` directory you will find a powershell file setting every configu
 1. Update the files found in `config` then copy them into {extracted-directory}\WEB-INF\classes. Overwritting the files already there.
 1. Update the start.ps1 to have the settings you want
 
+*Running as a Service*
+1. Setup Eureka (see above)
+1. Copy the spring-boot jar, `deploy\eureka-service.exe`, `deploy\eureka-service.xml` to desired folder.
+1. Run eureka-service.exe install
+
+
 ## Potential Issues
 - The executable jar needs to be in the same directory as the start.ps1 script by default.
 - The application will write to disk, check permissions on the tomcat base directory.
